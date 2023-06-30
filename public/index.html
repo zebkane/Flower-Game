@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nature</title>
+    <link rel="stylesheet" href="https://use.typekit.net/tzw8gfg.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+    </script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="title-screen">
+      <div class="centered">
+        <h1 class="title">Flower Game</h1>
+        <button id="play-button" type="button">Play</button>
+      </div>
+      <div class="changelog-box">
+        <h3 class="changelog-title">Changelog</h3>
+        <p class="changelog-version">v1.0.0</p>
+        <ul class="changelog-list">
+          <li><p>- Flower Game comes online</p></li>
+        </ul>
+        <a class="changelog-link" href="changelog.html">view all updates</a>
+      </div>
+    </div>
+    <div class="game-wrapper">
+      <canvas id="canvas"></canvas>
+    </div>
+  </body>
+</html>
